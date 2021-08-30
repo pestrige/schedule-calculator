@@ -1,0 +1,65 @@
+:root {
+  --font: "Roboto", "Arial", sans-serif;
+
+  --color-dark-800: #2c3e50;
+  --color-dark-600: #6e6e6e;
+  --color-dark-400: #bdbdbd;
+
+  --color-outline: #d2d2d2;
+  --color-background: #eef3f7;
+
+  --color-accent: #5c8cee;
+  --color-error: #ffdbe7;
+}
+
+// Global styles
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+}
+
+.root {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
