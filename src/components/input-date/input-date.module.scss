@@ -1,0 +1,53 @@
+.wrapper {
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+
+  @media (max-width: 1023px) {
+    justify-content: flex-start;
+  }
+}
+
+.calendar {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  min-height: 44px;
+  width: 115px;
+  font-family: var(--font);
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid var(--color-outline);
+  border-radius: 5px 0 0 5px;
+  cursor: pointer;
+  appearance: none;
+
+  &__from {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 5px 5px 0;
+    cursor: default;
+
+    @media (max-width: 639px) {
+      flex-grow: 1;
+    }
+  }
+
+  &__time {
+    cursor: text;
+    &::-webkit-calendar-picker-indicator {
+      display: none;
+    }
+  }
+}
+
+.from {
+  padding: 10px;
+  text-align: center;
+  background-color: var(--color-outline);
+}

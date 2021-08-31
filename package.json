@@ -7,12 +7,17 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "classnames": "^2.3.1",
+    "dayjs": "^1.10.6",
     "eslint": "^7.11.0",
+    "mobx": "^6.3.2",
+    "mobx-react-lite": "^3.2.0",
     "node-sass": "^4.14",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-flatpickr": "^3.10.7",
     "react-scripts": "4.0.3",
+    "react-select": "^4.3.1",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
@@ -35,6 +40,19 @@
             ".js",
             ".jsx"
           ]
+        }
+      ],
+      "object-curly-newline": 0,
+      "react/require-default-props": 0,
+      "jsx-a11y/label-has-associated-control": [
+        "error",
+        {
+          "required": {
+            "some": [
+              "nesting",
+              "id"
+            ]
+          }
         }
       ]
     }
