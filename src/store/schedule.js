@@ -1,6 +1,6 @@
 import { makeAutoObservable } from 'mobx';
 import { BreakTime, Days, HourType } from '../const';
-import { calcEndDate, calcEndTime, formatDateToISO, formatSelectedDays } from '../utils/utils';
+import { calcEndDate, calcEndTime, formatDate, formatSelectedDays } from '../utils/utils';
 
 const MIN_TOTAL_HOURS = 3;
 const MIN_DAY_HOURS = 1;
@@ -113,8 +113,8 @@ class Schedule {
       hours_type: this.options.hoursType.value,
       total_hours: this.options.totalHours,
       day_hours: this.options.dayHours,
-      start_date: formatDateToISO(this.options.startDate),
-      end_date: formatDateToISO(this.endDate),
+      start_date: formatDate(this.options.startDate),
+      end_date: this.endDate,
       start_time: this.options.startTime,
       end_time: this.endTime,
       break_time: this.options.breakTime.value,

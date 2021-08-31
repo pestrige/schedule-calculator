@@ -34,7 +34,6 @@ export const formatSelectedDays = (days) => days.reduce((acc, day) => {
 }, []);
 
 export const formatDate = (date) => dayjs(date).format('DD.MM.YYYY');
-export const formatDateToISO = (date) => dayjs(date).toISOString();
 
 export const calcEndTime = (hoursType, hours, breakTime, startTime) => {
   const startTimeInMinutes = toMinutes(startTime);
