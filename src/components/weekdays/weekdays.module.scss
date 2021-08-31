@@ -50,9 +50,11 @@
     }
   }
 
-  &:hover {
-    background-color: var(--color-accent);
-    color: white;
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--color-accent);
+      color: white;
+    }
   }
 
   &:first-of-type {
@@ -83,10 +85,13 @@
     padding: 5px;
   }
 
-  &:hover {
-    background-color: var(--color-accent);
-    color: white;
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--color-accent);
+      color: white;
+    }
   }
+
   &:not(:last-of-type) {
     border-right: none;
   }
